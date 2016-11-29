@@ -50,8 +50,8 @@ void setup(){
 
    j_text = loadImage("Jupiter.jpg");
     
-    jupiter = createShape(SPHERE, 70);
-    jupiter.setTexture(j_text);//using dot syntax to make the sphere resemble the earth 
+   jupiter = createShape(SPHERE, 70);
+   jupiter.setTexture(j_text);//using dot syntax to make the sphere resemble the earth 
    
 
     shape(jupiter);
@@ -221,7 +221,7 @@ void draw() {
     text( "Neptune is 4.3 billion km away (12 years)",300,200);
   }
      
-                        draw_moon();
+      draw_moon();//function called to draw moon
 
 
 }//end draw
