@@ -21,8 +21,6 @@ PShape jupiter;
 
 PFont font;
 
-
-
 float[][] land ;
 
 void setup(){
@@ -60,7 +58,6 @@ void setup(){
     //strokeWeight(.1);//set the stroke weight to .1
     
    }//end draw jupiter
-   
    
    
  void  draw_neptune(){
@@ -230,31 +227,37 @@ void draw() {
 void mousePressed(){
   
       if (value == 0){
-        
-        
+       
         println("FACT 1: Only 59% of the moon's surface is visible from earth");
 
         value++;
-        }
+        }//end if
         
         else if(value ==1) {
 
               println("FACT 2: The surface area of the moon is 14,658,000 square miles or 9.4 billion acres.");
               value++;
               
-          }
+          }//end if
           
             else if(value ==2) {
               println("FACT 3: The moon rotates at 10 miles per hour compared to the earth's rotation of 1000 miles per hour.");
               value++;
              
-         }
+         }//end if
      
                 else if(value ==3) {
                   println("FACT 4:The moon's diameter is about 1/4 the diameter of the Earth. About 49 moons would fit inside the Earth.");
                   
                   value++;  
-           }
+           }//end if
+           
+           
+                else if(value ==4) {
+                  println("FACT 5:A full day on the moon, from one sunrise to the next, lasts about 29.5 Earth days on average..");
+                  
+                  value++;  
+           }//end if
          
    
 }//end mouse pressed function
