@@ -193,29 +193,28 @@ void draw() {
   }
   
   
-   if ((keyPressed == true) && ((key == 'm') || (key == 'M'))) 
-  {
-    textAlign(CENTER, BOTTOM);
-    fill(255);
-    text("Mars is 77.79 million km  away( 150 days ) ",300,200);
-  }
+     if ((keyPressed == true) && ((key == 'm') || (key == 'M'))) 
+    {
+      textAlign(CENTER, BOTTOM);
+      fill(255);
+      text("Mars is 77.79 million km  away( 150 days ) ",300,200);
+    }
+    
   
+       if ((keyPressed == true) && ((key == 'j') || (key == 'J'))) 
+    {
+      textAlign(CENTER, BOTTOM);
+      fill(255);
+      text( "Jupiter is 587.4105 million km away(6 years) ",300,200);
+    }
   
-  
-   if ((keyPressed == true) && ((key == 'j') || (key == 'J'))) 
-  {
-    textAlign(CENTER, BOTTOM);
-    fill(255);
-    text( "Jupiter is 587.4105 million km away(6 years) ",300,200);
-  }
-  
-     if ((keyPressed == true) && ((key == 'n') || (key == 'N'))) 
-  {
-    textAlign(CENTER, BOTTOM);
-    fill(255);
-    text( "Neptune is 4.3 billion km away (12 years)",300,200);
-  }
-     
+           if ((keyPressed == true) && ((key == 'n') || (key == 'N'))) 
+        {
+          textAlign(CENTER, BOTTOM);
+          fill(255);
+          text( "Neptune is 4.3 billion km away (12 years)",300,200);
+        }
+           
       draw_moon();//function called to draw moon
 
 
