@@ -157,7 +157,9 @@ void draw_globe(){
    
     beginShape(TRIANGLE_STRIP) ;
       
-    texture(surface);
+    texture(surface);//fills each triangle with moon texture
+    
+    
     for(int x = 0; x < cols ; x++ ){
       
       vertex((x+1)*scale, (y+1)*scale,land[x][y]);      
@@ -165,7 +167,7 @@ void draw_globe(){
       vertex(x*scale, (y)*scale,land[x][y+1]);
       /* makes its so the the vertices are drawn in triangle
                                   shapes instead of just on a singular line    */ 
-    }
+    }//end inner vertices loop
     endShape();
 
 
