@@ -39,23 +39,20 @@ void setup(){
   
   textFont(font, 29);
 
-}
+}//end setup()
 
   void draw_jupiter(){
      
    pushMatrix();
    translate(300,125,100);
    lights();
-
-        noStroke();
+   noStroke();
 
    j_text = loadImage("Jupiter.jpg");
     
     jupiter = createShape(SPHERE, 70);
     jupiter.setTexture(j_text);//using dot syntax to make the sphere resemble the earth 
-    
-    
-    
+   
 
     shape(jupiter);
        
