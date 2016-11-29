@@ -111,7 +111,7 @@ void setup(){
     popMatrix();
     //strokeWeight(.1);//set the stroke weight to .1
     
-   }
+   }// draw mars
      
 
 void draw_globe(){
