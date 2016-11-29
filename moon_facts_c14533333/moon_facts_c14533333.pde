@@ -113,7 +113,6 @@ void draw_globe(){
     shape(globe);
        
     popMatrix();
-    //strokeWeight(.1);//set the stroke weight to .1
     
 }//end draw globe 
 
