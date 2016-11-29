@@ -141,7 +141,7 @@ void draw_globe(){
   
   
   
-  translate(width/2,height/2);
+  translate(width/2,height/2);//moon flipped and flippeed again so in right position
   
   rotateX(PI/3);
   //rotate the grid flat as if you are flying over it if previous line is not 
