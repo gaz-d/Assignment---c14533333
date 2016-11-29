@@ -118,16 +118,14 @@ void draw_globe(){
   
   
 
-   pushMatrix();
-   translate(130,125,100);
-   lights();
-    earth = loadImage("Earth.jpg");
+    pushMatrix();
+    translate(130,125,100);
+    lights();
+     earth = loadImage("Earth.jpg");
     
     globe = createShape(SPHERE, 30);
     globe.setTexture(earth);//using dot syntax to make the sphere resemble the earth 
-    
-    
-
+   
     shape(globe);
        
     popMatrix();
@@ -156,6 +154,7 @@ void draw_globe(){
           
           }
           yoffsett+=.13;
+          
     }//end for loops to generate random 'Z' values to be stored in land array
   
   
@@ -202,10 +201,6 @@ void draw() {
             draw_mars();
             draw_jupiter();
             draw_neptune();
-            
-      
-          
-            
              
              
   if ((keyPressed == true) && ((key == 'e') || (key == 'E'))) 
@@ -268,6 +263,7 @@ void mousePressed(){
      
                 else if(value ==3) {
                   println("FACT 4:The moon's diameter is about 1/4 the diameter of the Earth. About 49 moons would fit inside the Earth.");
+                  
                   value++;
                  
            }
