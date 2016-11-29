@@ -33,13 +33,10 @@ void setup(){
   rows = h/scale;
   land = new float[cols][rows]; //<>//
   frameRate(55);//used to slow the speed down and make moving animation look more realisic
-   println( "Press 1st letter of planet for info");
-   println( "Click mouse for a moon fact");
-  font = createFont("YuGo-Medium", 32);
+  println( "Press 1st letter of planet for info");
+  println( "Click mouse for a moon fact");
   
-  textFont(font, 32);
-
-}
+}//end setup ()
 
   void draw_jupiter(){
      
@@ -239,23 +236,24 @@ void mousePressed(){
 
         value++;
         }
+        
         else if(value ==1) {
 
               println("FACT 2: The surface area of the moon is 14,658,000 square miles or 9.4 billion acres.");
               value++;
               
           }
+          
             else if(value ==2) {
               println("FACT 3: The moon rotates at 10 miles per hour compared to the earth's rotation of 1000 miles per hour.");
               value++;
              
-       }
+         }
      
                 else if(value ==3) {
                   println("FACT 4:The moon's diameter is about 1/4 the diameter of the Earth. About 49 moons would fit inside the Earth.");
                   
-                  value++;
-                 
+                  value++;  
            }
          
    
