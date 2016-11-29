@@ -87,7 +87,7 @@ void setup(){
 
 
 
-   void draw_mars(){
+ void draw_mars(){
      
    pushMatrix();
    translate(200,125,100);
@@ -110,8 +110,6 @@ void setup(){
 
 void draw_globe(){
   
-  
-
     pushMatrix();
     translate(130,125,100);
     lights();
@@ -126,7 +124,6 @@ void draw_globe(){
     //strokeWeight(.1);//set the stroke weight to .1
     
     
-  
 }//end draw globe 
 
 
@@ -137,7 +134,7 @@ void draw_globe(){
   noFill();
 
 
-    moving -=.09;
+    moving -=.09;// make the screen appear as if moving towards user
     
     float yoffsett = moving;
      for(int y = 0; y < rows; y++ ){
@@ -145,7 +142,7 @@ void draw_globe(){
           for(int x = 0; x < cols; x++ ){
             land[x][y] = map(noise(xoffsett,yoffsett),0,1,-75,75);
             xoffsett+=.13;
-          
+         
           }
           yoffsett+=.13;
           
@@ -175,11 +172,10 @@ void draw_globe(){
       
       vertex((x+1)*scale, (y+1)*scale,land[x][y]);      
       
-      vertex(x*scale, (y)*scale,land[x][y+1]);/* makes its so the the vertices are drawn in triangle
+      vertex(x*scale, (y)*scale,land[x][y+1]);
+      /* makes its so the the vertices are drawn in triangle
                                   shapes instead of just on a singular line    */ 
-                                }
-
-
+    }
     endShape();
 
 
