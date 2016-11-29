@@ -135,7 +135,7 @@ void draw_globe(){
     
     
   
-}
+}//end draw globe 
 
 
  void draw_moon(){
