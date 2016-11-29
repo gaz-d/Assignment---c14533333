@@ -69,19 +69,16 @@ void setup(){
  void  draw_neptune(){
      
      pushMatrix();
-   translate(440,125,100);
-   lights();
+     translate(440,125,100);
+     lights();
 
-        noStroke();
+    noStroke();
 
     blue_planet = loadImage("neptune.jpg");
     
     neptune = createShape(SPHERE, 45);
     neptune.setTexture(blue_planet);//using dot syntax to make the sphere resemble the earth 
-    
-    
-    
-
+   
     shape(neptune);
        
     popMatrix();
@@ -96,16 +93,13 @@ void setup(){
    translate(200,125,100);
    lights();
 
-        noStroke();
+    noStroke();
 
     red_planet = loadImage("mars texture.jpg");
     
     mars = createShape(SPHERE, 22);
     mars.setTexture(red_planet);//using dot syntax to make the sphere resemble the earth 
-    
-    
-    
-
+   
     shape(mars);
        
     popMatrix();
