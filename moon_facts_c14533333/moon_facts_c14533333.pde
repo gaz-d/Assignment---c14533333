@@ -33,10 +33,13 @@ void setup(){
   rows = h/scale;
   land = new float[cols][rows]; //<>//
   frameRate(55);//used to slow the speed down and make moving animation look more realisic
-  println( "Press 1st letter of planet for info");
-  println( "Click mouse for a moon fact");
+   println( "Press 1st letter of planet for info");
+   println( "Click mouse for a moon fact");
+  font = createFont("YuGo-Medium", 32);
   
-}//end setup ()
+  textFont(font, 29);
+
+}
 
   void draw_jupiter(){
      
@@ -192,7 +195,7 @@ void draw() {
              
   if ((keyPressed == true) && ((key == 'e') || (key == 'E'))) 
   {
-   textAlign(CENTER, BOTTOM);
+    textAlign(CENTER, BOTTOM);
     fill(255);
     text( " Earth is 384,400 km away ( 3 days ) ", 300,200);
   }
@@ -211,7 +214,7 @@ void draw() {
   {
     textAlign(CENTER, BOTTOM);
     fill(255);
-    text( " Jupiter is 587.41056 million km away ( 6 years ) ",300,200);
+    text( "Jupiter is 587.4105 million km away(6 years) ",300,200);
   }
   
      if ((keyPressed == true) && ((key == 'n') || (key == 'N'))) 
